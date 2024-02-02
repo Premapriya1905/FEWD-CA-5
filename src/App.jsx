@@ -26,6 +26,8 @@ function App() {
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+ 
+
   return (
     <div>
       <Router>
@@ -50,7 +52,7 @@ function App() {
                     </div>
                   ))
                 ) : (
-                  <p>No data found</p>
+                  <p id='not-data'>No data found</p>
                 )}
               </div>
             }
@@ -59,6 +61,21 @@ function App() {
           <Route path="/forms" element={<Forms />} />
         </Routes>
       </Router>
+      {/* for animation of falling snowballs */}
+      <div className="snowballs-animation">
+        {Array.from({ length: 50 }, (index) => (
+          <div
+            key={index}
+            className="snowballs"
+            style={{
+              top: `${0}vh`,
+              left: `${Math.random() * 100}vw`, // Random left position
+              animationDuration: `${Math.random() * 3 + 1}s`, // Random duration
+              animationDelay: `${Math.random()}s`, // Random delay
+            }}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 }

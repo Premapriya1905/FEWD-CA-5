@@ -1,6 +1,8 @@
 body {
     margin: 0%;
     padding: 0%;
+    background-color: red;
+    color:red
   }
   
   .container {
@@ -9,6 +11,19 @@ body {
     margin-top: 10vw;
     row-gap: 2vw;
   }
+  label{
+    color: white;
+  }
+  .form-parent p {
+    color: white;
+  }
+  #head{
+    color:white;
+  }  
+  #not-data{
+    color: white;
+    font-size: 3vw;
+  }
   
   .book-item {
     display: block;
@@ -16,11 +31,11 @@ body {
     text-align: center;
     align-items: center;
     margin-left: 10vw;
-    border: 1px solid #ddd; 
-    height: 60vh;
+    border: 0.2vw solid #ddd; 
+    height: 75vh;
     width: 20vw;
-    background-color: rgb(74, 78, 80);
-    border-radius: 10px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vw; 
   }
   
   /* Style for each book title */
@@ -30,20 +45,41 @@ body {
   
   /* Style for the book image */
   #flex img {
-    border-radius: 5px; 
+    border-radius: 0.5vw; 
   }
   
   .book-item span {
     display: block;
-    margin-top: 5px;
+    margin-top: 1vw;
   }
   
   /* Style for the "Free" text */
   .book-item  p{
     font-weight: bold;
-    color: rgb(6, 209, 6);
+    color: green;
+  }
+
+  .snowballs-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1; /* Ensure the balls are on top of other elements */
   }
   
-
+  .snowballs{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff; /* Ball color */
+    border-radius: 50%; /* Make it round */
+    animation: fallAnimation linear infinite;
+  }
   
-  
+  @keyframes fallAnimation {
+    to {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }

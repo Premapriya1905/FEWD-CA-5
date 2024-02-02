@@ -1,15 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 .form-parent{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 30vw;
     margin-top: 2vw ;
-    border: 5px solid white ;
+    border: 0.2vw solid white ;
     border-radius: 2vw;
-    background-color: rgb(74, 78, 80);
     height: 68vh;
     width: 40vw;
     font-size: 1vw;
+    color: white;
     
 }
 #head{
@@ -42,6 +45,7 @@
 }
 #text{
     background-color: black;
+    color: white;
     border-radius: 1vh;
     height: 3vh;
 }

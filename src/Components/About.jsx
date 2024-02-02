@@ -11,7 +11,7 @@ const WelcomeModal = ({ isOpen, closeModal }) => {
     >
       <div className="about">
         <h1>About Us</h1>
-        <h3>Welcome to Kalvium Books World! ❤️</h3>
+        <h3>Welcome to Kalvium Books World! 💙</h3>
         <p>
           At Kalvium, we invite you to embark on an enchanting journey through
           the world of literature...
