@@ -1,0 +1,47 @@
+.form-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vw;
+    margin-top: 2vw ;
+    border: 5px solid white ;
+    border-radius: 2vw;
+    background-color: rgb(74, 78, 80);
+    height: 68vh;
+    width: 40vw;
+    font-size: 1vw;
+    
+}
+#head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vw;
+    margin-left: 30vw;
+}
+#p{
+    text-align: center;
+    color: darkgreen;
+    font-size: 5vh;
+}
+#text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+    background-color: green;
+    height: 4vh;
+    width: 8vw;
+    border-radius: 1vw;
+}
+.box1, .box2, .box3, .box4, .box5, .box6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+}
+#text{
+    background-color: black;
+    border-radius: 1vh;
+    height: 3vh;
+}

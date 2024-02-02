@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10vw;
+    row-gap: 2vw;
+  }
+  
+  .book-item {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 10vw;
+    border: 1px solid #ddd; 
+    height: 60vh;
+    width: 20vw;
+    background-color: rgb(74, 78, 80);
+    border-radius: 10px; 
+  }
+  
+  /* Style for each book title */
+  #title {
+    font-weight: bold;
+  }
+  
+  /* Style for the book image */
+  #flex img {
+    border-radius: 5px; 
+  }
+  
+  .book-item span {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Style for the "Free" text */
+  .book-item  p{
+    font-weight: bold;
+    color: rgb(6, 209, 6);
+  }
+  
+
+  
+  

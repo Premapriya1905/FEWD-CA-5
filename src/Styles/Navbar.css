@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 1000;
+  background-color: rgb(36, 35, 35);
+}
+
+.logo{
+    height: 10vh;
+    width: 15vw;
+}
+.input{
+   height: 5vh;
+   width: 40vw;
+   margin-top: 1vw;
+   margin-left: 16vw;
+   border-radius: 0.5vw;
+   color: white;
+   font-size: 1vw;
+   background-color: rgb(74, 78, 80);
+}
+#link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    margin-left: 20vw;
+    color: white;
+    height: 3vw;
+    background-color: green;
+    margin-top: 0.8vw;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: pink; 
+        color: red;
+    }
+}
+
+.welcome-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 1vw;
+    padding: 20px;
+    outline: none;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #close{
+  background-color: red;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darkred; 
+    color: green;
+  }
+  }
+
+  img {
+    --color: teal; 
+    --border: 10px;   
+    --offset: 20px;   
+    --gap: 5px;      
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding: 
+      calc(var(--gap) + var(--border))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border));
+    background: 
+      linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+      linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+    background-repeat: no-repeat;
+    filter: grayscale(.4);
+    transition: .5s;
+    cursor: pointer;
+  }
+  img:hover {
+    background-position: 0px 0px;
+    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    filter: grayscale(0);
+  }
